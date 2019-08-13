@@ -1,11 +1,14 @@
 import React from 'react';
 
-const Song = () => {
+const Song = (props) => {
   return(
     <div>
-      <h5>I'm a song!!!!</h5>
+
+      <li>{props.position}. {props.song.title.label}</li>
     </div>
   );
 }
 
 export default Song;
+
+// chart position, title and artist

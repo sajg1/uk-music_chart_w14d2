@@ -1,11 +1,12 @@
 import React from 'react';
 import Song from './Song';
+import './ChartList.css'
 
 const ChartList = (props) => {
 
   const chartList = props.chart.map((song, index) => {
     return(
-      <Song song={song} key={index} />
+      <Song song={song} key={index} position={index + 1}/>
     );
   });
 
