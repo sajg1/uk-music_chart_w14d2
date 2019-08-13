@@ -24,7 +24,7 @@ class MusicBox extends Component {
     return(
       <div className="music-box">
         <h2>I'm a Music Box</h2>
-        <ChartList/>
+        <ChartList chart={this.state.ukChart} />
       </div>
     )
   }
